@@ -427,6 +427,7 @@ function PaymentSuccessContent() {
     useEffect(() => {
         if (loading) return;
         if (!user) return;
+        if (!firebaseApp) return;
 
         (async () => {
             try {
